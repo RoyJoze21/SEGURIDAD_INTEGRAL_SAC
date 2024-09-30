@@ -94,17 +94,26 @@ html p a:hover {
 *
 * Typography
 */
+
+:root {
+    --primary-color: #cc7618; 
+    --secondary-color: #fbbf44; 
+}
+
+
 body {
 	font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	font-weight: 400;
 	color: rgba(21, 21, 21, 0.7);
-	background-color: #fff;
+	background-color: #ffffff;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
 	letter-spacing: .03em;
 }
+
+
 
 @media (min-width: 768px) {
 	body {
@@ -864,7 +873,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .box-1 {
-	max-width: 280px;
+	/* max-width: 280px; */
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -7517,6 +7526,7 @@ h3 + .owl-carousel, .heading-3 + .owl-carousel {
 
 .row-50 {
 	margin-bottom: -50px;
+	/* text-align: center; */
 }
 
 .row-50:empty {
@@ -8096,6 +8106,7 @@ html [class*='section-'].section-bottom-0 {
 	.range > [class*='cell-sm'].container {
 		margin: 0;
 	}
+	
 }
 
 @media (min-width: 768px) {
@@ -10746,6 +10757,7 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-minimal.rd-navbar-static .rd-navbar-main-outer {
 	padding-left: 15px;
 	padding-right: 15px;
+	background-color: #162c46;
 }
 
 .rd-navbar-minimal.rd-navbar-static .rd-navbar-main {
@@ -10771,7 +10783,7 @@ html.rd-navbar-fixed-linked .page {
 	width: auto;
 	height: auto;
 	max-width: 200px;
-	max-height: 200px;
+	max-height: 100px;
 }
 
 .rd-navbar-minimal.rd-navbar-static .rd-navbar-megamenu {
@@ -14117,5 +14129,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media (min-width: 1200px) {
 	* + .slick-widget-testimonials {
 		margin-top: 75px;
+	}
+}
+/* modified */
+@media (max-width: 576px) {
+	.row-50{
+		text-align: center;
 	}
 }
